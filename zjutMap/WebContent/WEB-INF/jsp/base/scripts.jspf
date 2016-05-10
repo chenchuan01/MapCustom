@@ -1,0 +1,32 @@
+<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+<!-- JAVASCRIPTS -->
+<!-- Placed at the end of the document so the pages load faster -->
+<!-- JQUERY -->
+<script src="${ctx }/static/js/jquery/jquery-2.0.3.min.js"></script>
+
+<!-- JQUERY UI-->
+<script src="${ctx }/static/js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js"></script>
+
+<!-- BOOTSTRAP -->
+<script src="${ctx }/static/bootstrap-dist/js/bootstrap.min.js"></script>
+
+<!-- COOKIE -->
+<script type="text/javascript" src="${ctx }/static/js/jQuery-Cookie/jquery.cookie.min.js"></script>
+
+<!-- SLIMSCROLL -->
+<script type="text/javascript" src="${ctx }/static/js/jQuery-slimScroll-1.3.0/jquery.slimscroll.min.js"></script>
+<script type="text/javascript" src="${ctx }/static/js/jQuery-slimScroll-1.3.0/slimScrollHorizontal.min.js"></script>
+
+<!-- UNIFORM -->
+<script type="text/javascript" src="${ctx }/static/js/uniform/jquery.uniform.min.js"></script>
+
+<!-- BLOCK UI -->
+<script type="text/javascript" src="${ctx }/static/js/jQuery-BlockUI/jquery.blockUI.min.js"></script>
+<!-- CUSTOM SCRIPT -->
+<script src="${ctx }/static/js/script.js"></script>
+
+<script src="${ctx }/static/js/common.js"></script>
+
+<script src="${ctx }/static/js/map/map.js"></script>
+<!-- GaoDe MAP -->
+<script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=c9c2e132be303d5218d9e8e11ce0e828"></script>
