@@ -12,31 +12,34 @@
 	<!-- HEADER -->
 	<header class="navbar clearfix" id="header">
 		<div class="container">
-				<!-- COMPANY LOGO -->
-				<h3 style="display: inline;color: #fff;">
-					<b>Web Map For ZJUT</b>
-				</h3>
-				<!-- /COMPANY LOGO -->
+				<div class="navbar-brand">
+					<!-- COMPANY LOGO -->
+					<h3 style="display: inline;color: #fff;">
+						<b>Web Map</b>
+					</h3>
+					<!-- /COMPANY LOGO -->
+				</div>
+				
 				<!-- NAVBAR LEFT -->
 				<ul class="nav navbar-nav pull-left hidden-xs" id="navbar-left">
-					<!-- <li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-							<i class="fa fa-cog"></i>
-							<span class="name">Skins</span>
-							<i class="fa fa-angle-down"></i>
+					<li class="dropdown">
+						<a href="javascript:;" class="team-status-toggle dropdown-toggle tip-bottom" data-toggle="tooltip" title="Map Navigation">
+							<i class="fa fa-globe"></i>
+							<span class="name">导航地图</span>
 						</a>
-						<ul class="dropdown-menu skins">
-							<li class="dropdown-title">
-								<span><i class="fa fa-leaf"></i> Theme Skins</span>
-							</li>
-							<li><a href="#" data-skin="default">Subtle (default)</a></li>
-							<li><a href="#" data-skin="night">Night</a></li>
-							<li><a href="#" data-skin="earth">Earth</a></li>
-							<li><a href="#" data-skin="utopia">Utopia</a></li>
-							<li><a href="#" data-skin="nature">Nature</a></li>
-							<li><a href="#" data-skin="graphite">Graphite</a></li>
-						 </ul>
-					</li> -->
+					</li>
+					<li class="dropdown">
+						<a href="javascript:;" class="team-status-toggle dropdown-toggle tip-bottom" data-toggle="tooltip" title="Campus Scenery">
+							<i class="fa fa-picture-o"></i>
+							<span class="name">工大风光</span>
+						</a>
+					</li>
+					<li class="dropdown">
+						<a href="javascript:;" class="team-status-toggle dropdown-toggle tip-bottom" data-toggle="tooltip" title="Point Share">
+							<i class="fa  fa-rss"></i>
+							<span class="name">精品推荐</span>
+						</a>
+					</li>
 				</ul>
 				<!-- /NAVBAR LEFT -->
 				<!-- BEGIN TOP NAVIGATION MENU -->					
@@ -55,19 +58,19 @@
 					<li class="dropdown">
 						<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
 							<i class="fa fa-cog"></i>
-							<span class="name">Skins</span>
+							<span class="name">主题</span>
 							<i class="fa fa-angle-down"></i>
 						</a>
 						<ul class="dropdown-menu skins">
 							<li class="dropdown-title">
-								<span><i class="fa fa-leaf"></i> Theme Skins</span>
+								<span><i class="fa fa-leaf"></i> 网站主题</span>
 							</li>
-							<li><a href="javascript:;" data-skin="default">Subtle (default)</a></li>
-							<li><a href="javascript:;" data-skin="night">Night</a></li>
-							<li><a href="javascript:;" data-skin="earth">Earth</a></li>
-							<li><a href="javascript:;" data-skin="utopia">Utopia</a></li>
-							<li><a href="javascript:;" data-skin="nature">Nature</a></li>
-							<li><a href="javascript:;" data-skin="graphite">Graphite</a></li>
+							<li><a href="javascript:;" data-skin="default">默认</a></li>
+							<li><a href="javascript:;" data-skin="night">夜晚</a></li>
+							<li><a href="javascript:;" data-skin="earth">地球</a></li>
+							<li><a href="javascript:;" data-skin="utopia">乌托邦</a></li>
+							<li><a href="javascript:;" data-skin="nature">自然</a></li>
+							<li><a href="javascript:;" data-skin="graphite">石墨</a></li>
 						 </ul>
 					</li>
 				</ul>
@@ -89,14 +92,25 @@
 						<div class="row">
 							<div class="col-sm-12">
 								<div class="page-header">
-									<div class="clearfix">
-										<h5 class="content-title pull-left">Simple Tables</h5>
-									</div>
-									<div class="description">Simple Tables with exclusive UI experience</div>
+									<form class="form-inline" role="form" style="padding-top:1%;">
+									  <div class="form-group">
+										<label class="sr-only" for="from">出发</label>
+										<input type="text" class="form-control" id="from" placeholder="出发">
+									  </div>
+									  <i class="fa fa-arrow-right"></i>
+									  <div class="form-group">
+										<label class="sr-only" for="from">到达</label>
+										<input type="text" class="form-control" id="dest" placeholder="到达">
+									  </div>
+									  <button type="submit" class="btn btn-info"><i class="fa fa-search"></i>导航搜索</button>
+									</form>
 								</div>
 							</div>
 						</div>
 						<!-- /PAGE HEADER -->
+						<div class="row">
+							<div id="mapContent" class="plane-body"></div>
+						</div>
 					</div>
 					
 					<div class="footer-tools">
